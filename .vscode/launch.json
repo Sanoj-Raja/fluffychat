@@ -5,18 +5,18 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "fluffychat-v1.2.0",
+            "name": "fluffychat",
             "request": "launch",
             "type": "dart"
         },
         {
-            "name": "fluffychat-v1.2.0 (profile mode)",
+            "name": "fluffychat (profile mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "profile"
         },
         {
-            "name": "fluffychat-v1.2.0 (release mode)",
+            "name": "fluffychat (release mode)",
             "request": "launch",
             "type": "dart",
             "flutterMode": "release"
