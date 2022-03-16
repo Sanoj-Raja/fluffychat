@@ -1,5 +1,6 @@
 //@dart=2.12
 
+import 'package:fluffychat/pages/create_topic/create_topic_view.dart';
 import 'package:flutter/material.dart';
 
 import 'package:vrouter/vrouter.dart';
@@ -104,6 +105,10 @@ class AppRoutes {
             VWidget(
               path: '/newprivatechat',
               widget: const NewPrivateChat(),
+            ),
+            VWidget(
+              path: '/createTopic',
+              widget: const CreateTopicView(),
             ),
             VWidget(
               path: '/newgroup',

@@ -80,6 +80,19 @@ class ChatInputRow extends StatelessWidget {
                   onSelected: controller.onAddPopupMenuButtonSelected,
                   itemBuilder: (BuildContext context) =>
                       <PopupMenuEntry<String>>[
+                    if (PlatformInfos.isMobile)
+                      const PopupMenuItem<String>(
+                        value: 'createTopic',
+                        child: ListTile(
+                          leading: CircleAvatar(
+                            backgroundColor: Colors.purple,
+                            foregroundColor: Colors.white,
+                            child: Icon(Icons.edit),
+                          ),
+                          title: Text('Create Topic'),
+                          contentPadding: EdgeInsets.all(0),
+                        ),
+                      ),
                     PopupMenuItem<String>(
                       value: 'videocall',
                       child: ListTile(

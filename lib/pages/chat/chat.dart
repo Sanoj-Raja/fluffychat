@@ -120,6 +120,10 @@ class ChatController extends State<Chat> {
 
   bool showEmojiPicker = false;
 
+  void goToCreateTopic() {
+    VRouter.of(context).to('/createTopic');
+  }
+
   void startCallAction() async {
     final url =
         '${AppConfig.jitsiInstance}${Uri.encodeComponent(Matrix.of(context).client.generateUniqueTransactionId())}';
@@ -805,6 +809,9 @@ class ChatController extends State<Chat> {
     }
     if (choice == 'videocall') {
       startCallAction();
+    }
+    if (choice == 'createTopic') {
+      goToCreateTopic();
     }
   }
 
